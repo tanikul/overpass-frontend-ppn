@@ -111,7 +111,7 @@ const Users = () => {
     setDeleteModal(false);
   };
 
-  const handleReset = () => {console.log('xxxxxx')
+  const handleReset = () => {
     setUsername("");
     setFirstName("");
     setLastName("");

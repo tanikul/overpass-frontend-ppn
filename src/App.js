@@ -118,7 +118,7 @@ class App extends Component {
         //console.log("Unable to get permission to notify.", err);
       }
 
-      navigator.serviceWorker.addEventListener("message", (message) => {
+      navigator.serviceWorker.addEventListener("message", (message) => {        
         this.showNotification(message);
       });
     }

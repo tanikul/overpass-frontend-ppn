@@ -6,20 +6,20 @@ if (firebase.messaging.isSupported()) {
     const initializedFirebaseApp = firebase.initializeApp({
         // Project Settings => Add Firebase to your web app
         
-       apiKey: "AIzaSyApvsqcGtSylU6OcOyO4dnerDz8zflqgkU",
-       authDomain: "overpass-b5e6f.firebaseapp.com",
-       projectId: "overpass-b5e6f",
-       storageBucket: "overpass-b5e6f.appspot.com",
-       messagingSenderId: "342066935344",
-       appId: "1:342066935344:web:db7b2acc1ec56330bf5ff5",
-       measurementId: "G-X574B1ED6M"
+        apiKey: "AIzaSyC7ckUlY9z9Tyghf-IrVYfNoe4WHGMgC24",
+        authDomain: "overpass-ppn.firebaseapp.com",
+        projectId: "overpass-ppn",
+        storageBucket: "overpass-ppn.appspot.com",
+        messagingSenderId: "292589233956",
+        appId: "1:292589233956:web:10b7a76a5c3869dda5b5b1",
+        measurementId: "G-68C44T0109"
    });
    messaging = initializedFirebaseApp.messaging();
 }
 
 
 const subscribeTokenToTopic = (token, topic) => {
-    const fcm_server_key = "AAAAT6THNjA:APA91bEpVPiz1LpQUG0pY73PKowO8UyPCeVaV3aFusud1zMGUoeevW4BP-rwoGPqA2R72geNPWyBz7fqnkcr214OxXZovTB0gK937kEK66vJlgDejCp7J0iLAhVnWJuPgmwnnHXpvIWo";
+    const fcm_server_key = "AAAARB-tZyQ:APA91bH2eY1volAL1KCojzemJJoErkzLllrPpCGzi-rD46DVt4EQL1Aw6nKxxBwll2V-gnuKtBb0NgTlKtFO6aR_EuEo2RuPIFzd5KJ2QIiMQZZLa4lw2h4Zm0_XR4qsmKPD2BpYHAHu";
     fetch('https://iid.googleapis.com/iid/v1/'+token+'/rel/topics/'+topic, {
       method: 'POST',
       headers: new Headers({

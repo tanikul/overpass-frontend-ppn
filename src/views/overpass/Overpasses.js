@@ -98,7 +98,6 @@ const Overpasses = () => {
   };
 
   const handleReset = () => {
-    console.log("xxxxx")
     setProvince("");
     setAmphur("");
     setDistrict("");
