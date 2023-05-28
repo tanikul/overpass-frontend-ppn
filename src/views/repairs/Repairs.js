@@ -94,7 +94,7 @@ const Repairs = () => {
                               className={(value.status === 'OFF') ? "text-danger" : "text-warning"} 
                             >{value.topic}</CLink>
                             </h5>
-                            <small>{value.effectiveDate}</small>
+                            <small><Moment format="DD/MM/YYYY HH:mm:ss">{value.effectiveDate}</Moment></small>
                             
                             <div className="mb-1">
                             <b>สถานที่</b>: {value.locationDisplay}
