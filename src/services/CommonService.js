@@ -24,10 +24,7 @@ export const post = (path, body = {}, headers) => {
       return response;
     })
     .catch(error => {
-      if(error.response.status === 401){
-        localStorage.clear();
-      }
-      console.log(error.response);
+      localStorage.clear();
       return error.response;
     });
 };
@@ -41,7 +38,6 @@ export const get = (path, query = "", headers) => {
     if(error.response.status === 401){
       localStorage.clear();
     }
-    console.log(error.response);
     return error.response;
   });
 };

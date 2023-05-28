@@ -65,6 +65,8 @@ const Login = () => {
     const rs = dispatch(requestLogin(userName, password, rememberMe)).then(data => {
       if(data !== undefined && data.status === 401){
         setErrorMsg("username หรือ password ไม่ถูกต้อง")
+      } else {
+        setErrorMsg("ระบบขัดข้อง กรุณาลองใหม่อีกครั้ง")
       }
     });
     setSubmitting(false);

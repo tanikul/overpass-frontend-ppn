@@ -8,7 +8,7 @@ const requestLogin = (userName, password, isRememberMe) => async (dispatch) => {
   const response = await signIn(userName, password).catch((err) => {
     dispatch({
       type: LOGIN_ERROR,
-      payload: err.response.data,
+      payload: (err.response) ? err.response.data : "System error.",
     });
     return err.response;
   });
