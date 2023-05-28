@@ -19,13 +19,13 @@ const _nav = [
     icon: 'cil-globe-alt',
     roles: ['USER', 'SUPER_ADMIN', 'ADMIN']
   },
-  {
+  /*{
     _tag: "CSidebarNavItem",
     name: "รายงาน",
     to: "/",
     icon: "cil-chart-pie",
     roles: ['USER', 'SUPER_ADMIN', 'ADMIN']
-  },
+  },*/
   {
     _tag: "CSidebarNavItem",
     name: "รายการแจ้งซ่อม",
